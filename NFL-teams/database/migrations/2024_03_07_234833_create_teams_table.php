@@ -13,6 +13,12 @@ return new class extends Migration
     {
         Schema::create('teams', function (Blueprint $table) {
             $table->id();
+            $table->string('name', 50)->unique();
+            $table->integer('titles');
+            $table->string('logo', 50);
+            $table->foreignId('conference_id')->references('id')->on('conferences');
+            $table->foreignId('division_id')->references('id')->on('divisions');
+            $table->foreignId('city_id')->references('id')->on('cities');
             $table->timestamps();
         });
     }

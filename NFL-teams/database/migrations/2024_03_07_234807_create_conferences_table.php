@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('conferences', function (Blueprint $table) {
             $table->id();
+            $table->string('conference_name', 50)->unique();
+            $table->string('conference_logo', 50);
+            $table->integer('superbowl_titles_in_conference');
             $table->timestamps();
         });
     }
