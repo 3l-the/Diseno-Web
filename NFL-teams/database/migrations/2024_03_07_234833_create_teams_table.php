@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 50)->unique();
             $table->integer('titles');
-            $table->string('logo', 50);
+            $table->string('logo');
             $table->foreignId('conference_id')->references('id')->on('conferences');
             $table->foreignId('division_id')->references('id')->on('divisions');
             $table->foreignId('city_id')->references('id')->on('cities');
