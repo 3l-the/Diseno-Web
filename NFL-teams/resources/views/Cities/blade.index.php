@@ -27,7 +27,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($conferences as $item)
+                        @foreach ($cities as $item)
                             <tr>
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->city_name }}</td>

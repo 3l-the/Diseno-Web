@@ -29,7 +29,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($conferences as $item)
+                        @foreach ($divisions as $item)
                             <tr>
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->division_name }}</td>
