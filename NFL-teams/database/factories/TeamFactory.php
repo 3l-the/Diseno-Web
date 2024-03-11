@@ -20,9 +20,9 @@ class TeamFactory extends Factory
             'name' => fake()->company(),
             'titles' => fake()->randomDigit(),
             'logo' => fake()->word(),
-            'conference_id' => fake()->numberBetween(0,3),
-            'division_id' => fake()->numberBetween(0,9),
-            'city_id' => fake()->numberBetween(0.21),
+            'conference_id' => fake()->numberBetween(1,2),
+            'division_id' => fake()->numberBetween(1,8),
+            'city_id' => fake()->numberBetween(1,20),
         ];
     }
 }
