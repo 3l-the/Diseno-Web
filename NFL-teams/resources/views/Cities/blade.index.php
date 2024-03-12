@@ -31,7 +31,6 @@
                             <tr>
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->city_name }}</td>
-                                <td>{{ $item->city_id }}</td>
                                 <td>Botones</td>
                             </tr>
                         @endforeach
