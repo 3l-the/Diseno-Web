@@ -12,7 +12,7 @@
     <div class="container py-5">
         <div class="row">
             <div class="col text-center">
-                <h1 class = "bg-primary text-white py-4">Confereces</h1>
+                <h1 class = "bg-primary text-white py-4">Conferences</h1>
             </div>
         </div>
 
