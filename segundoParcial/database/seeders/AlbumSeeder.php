@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Albums;
+use App\Models\Album;
 
 class AlbumSeeder extends Seeder
 {
@@ -13,7 +13,7 @@ class AlbumSeeder extends Seeder
      */
     public function run(): void
     {
-        Albums::factory()
+        Album::factory()
             ->count(20)
             ->create();
     }

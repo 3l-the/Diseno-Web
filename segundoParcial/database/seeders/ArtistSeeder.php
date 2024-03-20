@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Artists;
+use App\Models\Artist;
 
 class ArtistSeeder extends Seeder
 {
@@ -15,23 +15,23 @@ class ArtistSeeder extends Seeder
      */
     public function run(): void
     {
-        $artist = new Artists();
+        $artist = new Artist();
         $artist -> artist_name = "Hugo";
         $artist -> save();
 
-        $artist = new Artists();
+        $artist = new Artist();
         $artist -> artist_name = "Paco";
         $artist -> save();
 
-        $artist = new Artists();
+        $artist = new Artist();
         $artist -> artist_name = "Luis";
         $artist -> save();
 
-        $artist = new Artists();
+        $artist = new Artist();
         $artist -> artist_name = "Manolo";
         $artist -> save();
 
-        $artist = new Artists();
+        $artist = new Artist();
         $artist -> artist_name = "Tomate";
         $artist -> save();
     }
