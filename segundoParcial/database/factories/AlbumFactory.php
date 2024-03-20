@@ -18,7 +18,7 @@ class AlbumFactory extends Factory
     {
         return[
             'album_name' => fake()->word(),
-            'date_released' => fake()->date(),
+            'date_released' => fake()->date($format = 'Y-m-d', $max = 'now'),
             'artst_id' => fake()->numberBetween(1,5),
             'genre_id' => fake()->numberBetween(1,5),
         ];
