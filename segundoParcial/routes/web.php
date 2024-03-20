@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GenreController;
+use App\Http\Controllers\ArtistController;
+use App\Http\Controllers\AlbumController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('/genres', GenreController::class);
+Route::resource('/artists', ArtistController::class);
+Route::resource('/albums', AlbumController::class);
