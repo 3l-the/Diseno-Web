@@ -12,7 +12,7 @@ class AlbumController extends Controller
         $albums = DB::table('albums')
                     ->join('artists', 'artists.id', '=', 'albums.artist_id')
                     ->join('genres', 'genres.id', '=', 'albums.genre_id')
-                    ->select('id', 'album_name', 'date_released', 'artists.artist_name', 'genres.genre_name')
+                    ->select('albums.id', 'albums.album_name', 'albums.date_released', 'artists.artist_name', 'genres.genre_name')
                     ->get();
 
         //dd($albums);
