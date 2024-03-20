@@ -34,8 +34,8 @@
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->album_name }}</td>
                                 <td>{{ $item->date_released }}</td>
-                                <td>{{ $item->artists.artist_name }}</td>
-                                <td>{{ $item->genres.genre_name }}</td>
+                                <td>{{ $item->artist_name }}</td>
+                                <td>{{ $item->genre_name }}</td>
                             </tr>
                         @endforeach
                     </tbody>
