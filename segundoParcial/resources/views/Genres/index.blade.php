@@ -26,7 +26,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($teams as $item)
+                        @foreach ($genres as $item)
                             <tr>
                                 <td>{{ $item->id }}</td>
                                 <td>{{ $item->genre_name }}</td>
