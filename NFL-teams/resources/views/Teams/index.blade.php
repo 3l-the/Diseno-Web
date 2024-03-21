@@ -38,9 +38,9 @@
                                 <td>{{ $item->name }}</td>
                                 <td>{{ $item->titles }}</td>
                                 <td>{{ $item->logo }}</td>
-                                <td>{{ $item->conference_id }}</td>
-                                <td>{{ $item->division_id }}</td>
-                                <td>{{ $item->city_id }}</td>
+                                <td>{{ $item->conference_name }}</td>
+                                <td>{{ $item->division_name }}</td>
+                                <td>{{ $item->city_name }}</td>
                                 <td>Botones</td>
                             </tr>
                         @endforeach
