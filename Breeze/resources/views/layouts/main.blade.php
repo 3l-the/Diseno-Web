@@ -12,7 +12,7 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-        <img src="{{ asset('img/bayern_munich.png') }}" alt="" class="img-fluid" style="height: 50px">
+        <img src="{{ asset('img/Atreides.png') }}" alt="" class="img-fluid" style="height: 50px">
     </a>
 
 
